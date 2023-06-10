@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "com.diffplug.spotless" version "6.11.0"
 }
 
 group 'org.example'
@@ -9,9 +10,32 @@ repositories {
     mavenCentral()
 }
 
+spotless {
+    format "misc", {
+        target "**/*.gradle", "**/*.md", "**/.gitignore"
+        trimTrailingWhitespace()
+        indentWithSpaces(10)
+        endWithNewline()
+    }
+    java {
+        target "**/*.java"
+        targetExclude "**/generated/**"
+        importOrder('java', 'javax', 'com.gofin', '', '\\#com.gofin', '\\#')
+        removeUnusedImports()
+        googleJavaFormat("1.15.0")
+        endWithNewline()
+        custom "noWildcardImports", {
+            if (it.contains("*;\n")) {
+                throw new Error("No wildcard imports allowed")
+            }
+        }
+    }
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    compileOnly 'org.projectlombok:lombok:1.18.14'
 }
 
 test {

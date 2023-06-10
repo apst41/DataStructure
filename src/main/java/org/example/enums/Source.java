@@ -1,5 +1,6 @@
-package org.example.structural;
+package org.example.enums;
 
 public enum Source {
-    SMS,EMAIL
+  SMS,
+  EMAIL
 }
