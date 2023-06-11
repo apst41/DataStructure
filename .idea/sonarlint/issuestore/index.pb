@@ -23,11 +23,5 @@ X
 +src/main/java/org/example/list/Flatten.java,b/4/b4c83f609ed86066077248a8720de698b44ff2c2
 ^
 .src/main/java/org/example/structural/Tain.java,9/5/95e0f75714336695055151c4e2cd70accf12f80d
-S
-#src/main/java/org/example/Main.java,0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b
 _
 /src/main/java/org/example/concentrix/Train.java,f/a/fae51571b9f92a9120e017e25b78bfc89cdf1621
-[
-+src/main/java/org/example/enums/Source.java,f/9/f914f4e8d62f63567a224defe04a283b0d4c1005
-e
-5src/main/java/org/example/array/CylindricalArray.java,1/f/1f6d72927b44d3a176477d22400be664dce6836f
