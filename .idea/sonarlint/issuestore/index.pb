@@ -25,3 +25,6 @@ X
 .src/main/java/org/example/structural/Tain.java,9/5/95e0f75714336695055151c4e2cd70accf12f80d
 _
 /src/main/java/org/example/concentrix/Train.java,f/a/fae51571b9f92a9120e017e25b78bfc89cdf1621
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
