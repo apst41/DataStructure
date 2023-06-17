@@ -25,19 +25,18 @@ public class Graph {
     LinkedList<Integer> queue = new LinkedList<>();
     queue.add(s);
 
-      visited[s] = true;
-      while (!queue.isEmpty()) {
-        int v = queue.poll();
-        System.out.print(v + " ");
-        adjList[v].forEach(
-            edge -> {
-              if (!visited[edge]) {
-                visited[edge] = true;
-                queue.add(edge);
-              }
-            });
-      }
-
+    visited[s] = true;
+    while (!queue.isEmpty()) {
+      int v = queue.poll();
+      System.out.print(v + " ");
+      adjList[v].forEach(
+          edge -> {
+            if (!visited[edge]) {
+              visited[edge] = true;
+              queue.add(edge);
+            }
+          });
+    }
   }
 
   void DFS(int s) {

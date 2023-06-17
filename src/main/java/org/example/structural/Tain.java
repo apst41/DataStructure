@@ -6,13 +6,13 @@ import java.util.Scanner;
 
 public class Tain {
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = Integer.parseInt(scanner.nextLine());
-        List<Integer> integers = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            integers.add(scanner.nextInt());
-        }
-        integers.forEach(System.out::println);
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int n = Integer.parseInt(scanner.nextLine());
+    List<Integer> integers = new ArrayList<>();
+    for (int i = 0; i < n; i++) {
+      integers.add(scanner.nextInt());
     }
+    integers.forEach(System.out::println);
+  }
 }
