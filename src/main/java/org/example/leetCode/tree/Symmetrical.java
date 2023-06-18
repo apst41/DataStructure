@@ -12,7 +12,6 @@ public class Symmetrical {
   }
 
   public boolean isSymmetric(TreeNode root) {
-
     return isSymmetricalUtil(root.left, root.right);
   }
 }

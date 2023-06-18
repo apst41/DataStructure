@@ -17,10 +17,5 @@ m
 gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
 <
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
-X
-(src/main/java/org/example/list/Node.java,5/8/583c20f0e9b95d86923beb315f66152fbc25446b
 [
 +src/main/java/org/example/list/Flatten.java,b/4/b4c83f609ed86066077248a8720de698b44ff2c2
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
