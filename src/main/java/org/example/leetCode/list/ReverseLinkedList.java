@@ -1,4 +1,4 @@
-package org.example.list;
+package org.example.leetCode.list;
 
 import java.util.Stack;
 
@@ -29,6 +29,19 @@ public class ReverseLinkedList {
     }
     current.next = null;
     return head;
+  }
+
+  private static void reversePrintList(ReverseNode node) {
+    if (node == null) return;
+    reversePrintList(node.next);
+    System.out.print(node.data + "-->");
+  }
+
+  private static void printListRecur(ReverseNode node) {
+    if (node == null) return;
+
+    System.out.print(node.data + "-->");
+    printListRecur(node.next);
   }
 
   private static void print(ReverseNode node) {
@@ -71,15 +84,34 @@ public class ReverseLinkedList {
     return prev;
   }
 
+  private static ReverseNode reverseLinkedListRecursively(ReverseNode node) {
+    if (node.next == null) {
+      return node;
+    }
+    ReverseNode newNode = reverseLinkedListRecursively(node.next);
+    node.next.next = node;
+    node.next = null;
+    return newNode;
+  }
+
   public static void main(String[] args) {
     ReverseNode head = new ReverseNode(1);
     head.next = new ReverseNode(2);
     head.next.next = new ReverseNode(3);
     head.next.next.next = new ReverseNode(4);
-    head.next.next.next.next = new ReverseNode(5);
-    print(head);
+
+  //  printListRecur(head);
+
+    // reversePrintList(head);
     System.out.println();
-    head = reverseWithGroup(head, 2);
+
+    head = reverseLinkedListRecursively(head);
+
     print(head);
+
+    // print(head);
+
+    //  head = reverseLinkedListRecursively(head);
+    //  print(head);
   }
 }

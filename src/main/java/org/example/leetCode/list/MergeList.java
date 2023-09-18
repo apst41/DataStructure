@@ -20,7 +20,7 @@ public class MergeList {
       result.next = mergeList(a.next, b);
     } else {
       result = b;
-      result.next = mergeList(b.next, a);
+      result.next = mergeList(a, b.next);
     }
     return result;
   }

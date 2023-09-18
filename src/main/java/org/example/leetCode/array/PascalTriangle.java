@@ -2,19 +2,19 @@ package org.example.leetCode.array;
 
 public class PascalTriangle {
 
-  int[][] pascalTriangle(int n) {
-    int[][] array = new int[n][n];
+  static void pascalTriangle(int n) {
+    for (int line = 1; line <= n; line++) {
 
-    for (int line = 0; line < n; line++) {
-      for (int i = 0; i <= line; i++) {
-        if (i == 0 || i == line) array[line][i] = 0;
-        else {
-          array[line][i] = array[line - 1][i] + array[line - 1][i - 1];
-        }
+      int C = 1; // used to represent C(line, i)
+      for (int i = 1; i <= line; i++) {
+        System.out.print(C + " ");
+        C = C * (line - i) / i;
       }
+      System.out.println();
     }
-    return array;
   }
 
-  public static void main(String[] args) {}
+  public static void main(String[] args) {
+    pascalTriangle(4);
+  }
 }

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class climbStairs {
-  private static Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+  private static Map<Integer, Integer> map = new HashMap<>();
 
   private static int climbStairs(int n) {
     if (n <= 1) return 1;

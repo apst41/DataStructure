@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05adaaf1-2480-493b-b4d6-c1d24f19e66a" name="Changes" comment="[ajay] apply spotless">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/leetCode/array/PascalTriangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/list/ReverseLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/8/583c20f0e9b95d86923beb315f66152fbc25446b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/5/95e0f75714336695055151c4e2cd70accf12f80d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fae51571b9f92a9120e017e25b78bfc89cdf1621" beforeDir="false" />
+    <list default="true" id="05adaaf1-2480-493b-b4d6-c1d24f19e66a" name="Changes" comment="[ajay] add list reverse">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/MergeTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/array/RotateArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/recusion/AddArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/searching/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/LongestPalinSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/string/PrintAllSubstring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/structural/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d8abee53a3bc0e4127eb3a601cec1a7f36e2027" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d8abee53a3bc0e4127eb3a601cec1a7f36e2027" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b4c83f609ed86066077248a8720de698b44ff2c2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/4/b4c83f609ed86066077248a8720de698b44ff2c2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetCode/tree/Symmetrical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetCode/tree/Symmetrical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetCode/array/PascalTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetCode/array/PascalTriangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetCode/array/climbStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetCode/array/climbStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/leetCode/list/MergeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetCode/list/MergeList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/list/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="dsalgo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,16 +92,17 @@
     &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.22758621&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.ReverseLinkedList">
-    <configuration name="IntToRoman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.leetCode.string.IntToRoman" />
+    <configuration name="MergeTwoSortedArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.MergeTwoSortedArrays" />
       <module name="dsalgo.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.leetCode.string.*" />
+          <option name="PATTERN" value="org.example.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,8 +110,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.leetCode.list.MergeList" />
+    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.leetCode.list.ReverseLinkedList" />
       <module name="dsalgo.main" />
       <extension name="coverage">
         <pattern>
@@ -97,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.list.ReverseLinkedList" />
+    <configuration name="RotateArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.array.RotateArray" />
       <module name="dsalgo.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.list.*" />
+          <option name="PATTERN" value="org.example.array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.leetCode.string.RomanToInteger" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.structural.Solution" />
       <module name="dsalgo.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.leetCode.string.*" />
+          <option name="PATTERN" value="org.example.structural.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +149,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.leetCode.string.ValidParentheses" />
+    <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="dsalgo.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.leetCode.string.*" />
+          <option name="PATTERN" value="org.example.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ReverseLinkedList" />
-        <item itemvalue="Application.MergeList" />
-        <item itemvalue="Application.ValidParentheses" />
-        <item itemvalue="Application.IntToRoman" />
-        <item itemvalue="Application.RomanToInteger" />
+        <item itemvalue="Application.RotateArray" />
+        <item itemvalue="Application.MergeTwoSortedArrays" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.org.example.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +194,23 @@
       <workItem from="1686410440638" duration="12334000" />
       <workItem from="1686586709938" duration="4509000" />
       <workItem from="1686771627340" duration="2929000" />
-      <workItem from="1686989085758" duration="7686000" />
+      <workItem from="1686989085758" duration="14532000" />
+      <workItem from="1687336093207" duration="12655000" />
+      <workItem from="1687718076471" duration="636000" />
+      <workItem from="1687771598190" duration="673000" />
+      <workItem from="1687860777498" duration="9193000" />
+      <workItem from="1688324177813" duration="1863000" />
+      <workItem from="1688733972050" duration="9138000" />
+      <workItem from="1688927632519" duration="21211000" />
+      <workItem from="1689418318075" duration="4351000" />
+      <workItem from="1689615406416" duration="6481000" />
+      <workItem from="1689861626516" duration="11385000" />
+      <workItem from="1690379404762" duration="5682000" />
+      <workItem from="1690813628360" duration="8235000" />
+      <workItem from="1690959016275" duration="520000" />
+      <workItem from="1693069447364" duration="4789000" />
+      <workItem from="1693209557569" duration="597000" />
+      <workItem from="1693215948811" duration="9178000" />
     </task>
     <task id="LOCAL-00001" summary="[ajay] add ValidParentheses">
       <created>1686494313285</created>
@@ -191,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687027615715</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[ajay] add list reverse">
+      <created>1687113238154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687113238154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +261,8 @@
     <MESSAGE value="[ajay] add ValidParentheses" />
     <MESSAGE value="[ajay] add plus one program" />
     <MESSAGE value="[ajay] apply spotless" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ajay] apply spotless" />
+    <MESSAGE value="[ajay] add list reverse" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ajay] add list reverse" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -256,6 +306,130 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/string/ValidParentheses.java</url>
           <line>64</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/string/LongestPalinSubstring.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java</url>
+          <line>90</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>150</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>181</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>182</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/array/MergeTwoSortedArrays.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/array/MergeTwoSortedArrays.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/array/MergeTwoSortedArrays.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/array/MergeTwoSortedArrays.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/list/ReverseLinkedList.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/leetCode/array/PascalTriangle.java</url>
+          <line>16</line>
+          <properties class="org.example.leetCode.array.PascalTriangle" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
