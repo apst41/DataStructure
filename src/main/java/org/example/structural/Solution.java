@@ -1,11 +1,5 @@
 package org.example.structural;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 class Solution {
 
   private static int helper(int N) {
@@ -13,7 +7,6 @@ class Solution {
     int num2 = 1;
 
     int counter = 0;
-
 
     while (counter < N) {
       int num3 = num2 + num1;
@@ -26,7 +19,6 @@ class Solution {
   }
 
   public static void main(String[] args) {
-      System.out.println(helper(4));
+    System.out.println(helper(4));
   }
-
 }

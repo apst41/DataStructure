@@ -99,19 +99,8 @@ public class ReverseLinkedList {
     head.next = new ReverseNode(2);
     head.next.next = new ReverseNode(3);
     head.next.next.next = new ReverseNode(4);
-
-  //  printListRecur(head);
-
-    // reversePrintList(head);
     System.out.println();
-
     head = reverseLinkedListRecursively(head);
-
     print(head);
-
-    // print(head);
-
-    //  head = reverseLinkedListRecursively(head);
-    //  print(head);
   }
 }

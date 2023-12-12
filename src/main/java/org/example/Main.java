@@ -1,82 +1,82 @@
 package org.example;
 
-import java.util.*;
-
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Set;
 
 class Main {
-/*
+  /*
 
 
 
-class D extends B
-class B extends A
+  class D extends B
+  class B extends A
 
-Object Type Hierarchy Tree
-           Object
-       A           G
-    B     C        H
-    D   E   F    I   J
+  Object Type Hierarchy Tree
+             Object
+         A           G
+      B     C        H
+      D   E   F    I   J
 
-PL internal representation of Type Hierarchy
+  PL internal representation of Type Hierarchy
 
-Find the best type  of 2 objects
-// Example:
-  D & E = A
-  I & F = Object
-  I & J = H
+  Find the best type  of 2 objects
+  // Example:
+    D & E = A
+    I & F = Object
+    I & J = H
 
-Several Use cases:
+  Several Use cases:
 
-x =  condition ? st1 : st2;
-st1 of type D
-st2 of type F
+  x =  condition ? st1 : st2;
+  st1 of type D
+  st2 of type F
 
-Type of x -- ?
+  Type of x -- ?
 
-// Trying to infer the type of an
-//   If-Else statement
-//   Terinary (:) operators
-//   Return of a function
+  // Trying to infer the type of an
+  //   If-Else statement
+  //   Terinary (:) operators
+  //   Return of a function
 
-  condition ? statement1 : statement2
-  statement1 is a object of class1
-  statement2 is a object of class2
-
-
-// Other use cases
-// Find the common function in hierarchy
-// to execute on these two objects, for
-// example +
-*/
+    condition ? statement1 : statement2
+    statement1 is a object of class1
+    statement2 is a object of class2
 
 
-/*
-E = {name: "E"}; F = {name: "F"}
-C = {name: "C", left: E, right: F}
-D = {name: "D"};
-B = {name: "B", left: D}
-A = {name: "A", left: B, right: C};
+  // Other use cases
+  // Find the common function in hierarchy
+  // to execute on these two objects, for
+  // example +
+  */
+
+  /*
+  E = {name: "E"}; F = {name: "F"}
+  C = {name: "C", left: E, right: F}
+  D = {name: "D"};
+  B = {name: "B", left: D}
+  A = {name: "A", left: B, right: C};
 
 
-I = {name: "I"}; J = {name: "J"};
-H = {name: "H", left: I, right: J};
-G = {name: "G", left: H};
+  I = {name: "I"}; J = {name: "J"};
+  H = {name: "H", left: I, right: J};
+  G = {name: "G", left: H};
 
-Object = {name: "Object", left: A, right: G};
-Root = Object;
+  Object = {name: "Object", left: A, right: G};
+  Root = Object;
 
-            Root
-       A           G
-    B     C        H
-  D     E   F    I   J
-*/
+              Root
+         A           G
+      B     C        H
+    D     E   F    I   J
+  */
 
-
-  private static Set<String > set = new HashSet<>();
+  private static Set<String> set = new HashSet<>();
 
   static class Node {
     String name;
-    Node left, right ;
+    Node left, right;
 
     Node(String name) {
       this.name = name;
@@ -96,17 +96,14 @@ Root = Object;
       this.right = b;
     }
   }
-/*
+  /*
 
 
-            Object
-       A           G
-    B     C        H
-  D     E   F    I   J
-*/
-
-
-
+              Object
+         A           G
+      B     C        H
+    D     E   F    I   J
+  */
 
   static Node e = new Node("E");
   static Node f = new Node("F");
@@ -128,41 +125,36 @@ Root = Object;
     return helper(nodes, root).name;
   }
 
-
-  private static Node helper(Node[] nodes,Node no){
+  private static Node helper(Node[] nodes, Node no) {
     Queue<Node> queue = new LinkedList<>();
     queue.add(no);
 
     Node node = null;
 
-    while (!queue.isEmpty())
-    {
-     set.clear();
-       node = queue.poll();
+    while (!queue.isEmpty()) {
+      set.clear();
+      node = queue.poll();
 
       getChildNode(node.left);
 
       int count = countNode(nodes, set);
 
-      if(count ==nodes.length){
+      if (count == nodes.length) {
         queue.add(node.left);
-      }
-
-      else if(count == 0){
-       queue.add(node.right);
+      } else if (count == 0) {
+        queue.add(node.right);
       }
     }
 
-   return node;
-
+    return node;
   }
 
-  private static int countNode(Node[] nodes, Set<String> set){
+  private static int countNode(Node[] nodes, Set<String> set) {
 
-    int count=0;
-    for(Node node: nodes){
-      if(set.contains(node.name)){
-        count ++;
+    int count = 0;
+    for (Node node : nodes) {
+      if (set.contains(node.name)) {
+        count++;
       }
     }
     return count;
@@ -171,13 +163,10 @@ Root = Object;
   public static void main(String[] args) {
 
     System.out.println("Hello world!" + inferBaseType(new Node[] {d, f}));
-
   }
 
-
-  private static Set<String> getChildNode(Node node){
-    if(node==null)
-      return set;
+  private static Set<String> getChildNode(Node node) {
+    if (node == null) return set;
 
     getChildNode(node.left);
     set.add(node.name);

@@ -17,6 +17,8 @@ public class IntToRoman {
   }
 
   public static void main(String[] args) {
-    System.out.println(intToRoman(500));
+
+    int value = 9100;
+    System.out.println(value % 1000);
   }
 }
