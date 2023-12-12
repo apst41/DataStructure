@@ -117,7 +117,6 @@ public class BinaryTree {
 
     System.out.println(binaryTree.sizeOfTree(binaryTree.root));
 
-
     System.out.println(binaryTree.lastNodeInBinaryTree().value);
   }
 }
